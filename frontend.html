@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Analytics | Niharika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-bold tracking-widest text-teal-400 uppercase text-sm">Niharika | B.Tech CSE</span>
+            <div class="hidden md:flex gap-8 text-xs uppercase tracking-widest font-medium text-slate-400">
+                <a href="#problem" class="hover:text-teal-400 transition">Problem</a>
+                <a href="#dataset" class="hover:text-teal-400 transition">Dataset</a>
+                <a href="#results" class="hover:text-teal-400 transition">Results</a>
+                <a href="#conclusion" class="hover:text-teal-400 transition">Conclusion</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+        <div class="inline-block px-3 py-1 border border-teal-500/30 rounded text-teal-400 text-xs font-mono mb-6 uppercase tracking-widest">
+            Capstone Project 2026
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            Online Streaming <br> <span class="text-teal-400 text-outline">Event Data Analysis</span>
+        </h1>
+        <p class="text-slate-400 text-lg max-w-2xl leading-relaxed">
+            A comparative study of machine learning algorithms to predict user churn using behavioral signals from 5,000 customer records.
+        </p>
+    </header>
+
+    <section id="problem" class="py-20 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-teal-400 font-mono text-sm mb-2 uppercase tracking-tighter">Chapter 02</h2>
+                <h3 class="text-3xl font-bold text-white mb-6">The Problem: "Silent Churn"</h3>
+                <p class="text-slate-400 mb-4">
+                    Streaming platforms struggle with users who disengage gradually. We use behavioral indicators like <strong>Support Tickets</strong> and <strong>Satisfaction Scores</strong> to predict churn before it happens.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-sm text-slate-300">
+                        <span class="text-teal-400 mt-1">✔</span> Preprocess 5,000 records & handle missing values.
+                    </li>
+                    <li class="flex items-start gap-3 text-sm text-slate-300">
+                        <span class="text-teal-400 mt-1">✔</span> Compare Logistic Regression, Random Forest, and KNN.
+                    </li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <div class="text-3xl font-bold text-teal-400 mb-1">5,000</div>
+                    <div class="text-xs text-slate-500 uppercase">Records</div>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <div class="text-3xl font-bold text-teal-400 mb-1">12</div>
+                    <div class="text-xs text-slate-500 uppercase">Features</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dataset" class="py-20 max-w-6xl mx-auto px-6">
+        <h3 class="text-3xl font-bold text-white mb-10 text-center">Feature Variables</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="p-4 bg-slate-900 border border-slate-800 rounded-lg">
+                <div class="text-teal-500 font-mono text-xs mb-1">Last_Activity</div>
+                <div class="text-slate-400 text-xs">Behavioral (Days)</div>
+            </div>
+            <div class="p-4 bg-slate-900 border border-slate-800 rounded-lg">
+                <div class="text-teal-500 font-mono text-xs mb-1">Monthly_Spend</div>
+                <div class="text-slate-400 text-xs">Financial ($)</div>
+            </div>
+            <div class="p-4 bg-slate-900 border border-slate-800 rounded-lg">
+                <div class="text-teal-500 font-mono text-xs mb-1">Satisfaction_Score</div>
+                <div class="text-slate-400 text-xs">Imputed (1-5)</div>
+            </div>
+            <div class="p-4 bg-slate-800 border-2 border-teal-500/50 rounded-lg">
+                <div class="text-teal-400 font-mono text-xs mb-1 font-bold">Churned</div>
+                <div class="text-slate-300 text-xs italic">Target Label</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="py-20 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-center text-3xl font-bold text-white mb-16">Comparative Results</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                    <h4 class="text-xl font-bold mb-4">Logistic Regression</h4>
+                    <div class="text-4xl font-bold text-blue-400 mb-4">74.5%</div>
+                    <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                        <div class="bg-blue-500 h-full w-[74.5%]"></div>
+                    </div>
+                    <p class="mt-6 text-sm text-slate-400">Baseline model; limited by linear decision boundaries.</p>
+                </div>
+
+                <div class="bg-slate-800 p-8 rounded-2xl border-2 border-teal-500 transform scale-105 shadow-2xl shadow-teal-500/10">
+                    <div class="flex justify-between items-center mb-4">
+                        <h4 class="text-xl font-bold">Random Forest</h4>
+                        <span class="bg-teal-500/20 text-teal-400 text-[10px] px-2 py-1 rounded border border-teal-500/30 uppercase font-bold">Winner</span>
+                    </div>
+                    <div class="text-4xl font-bold text-teal-400 mb-4">89.2%</div>
+                    <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                        <div class="bg-teal-400 h-full w-[89.2%]"></div>
+                    </div>
+                    <p class="mt-6 text-sm text-slate-300 italic">Handled non-linear patterns between support tickets and satisfaction perfectly.</p>
+                </div>
+
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-amber-500 transition-all duration-300">
+                    <h4 class="text-xl font-bold mb-4">K-Nearest Neighbors</h4>
+                    <div class="text-4xl font-bold text-amber-400 mb-4">81.0%</div>
+                    <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                        <div class="bg-amber-500 h-full w-[81%]"></div>
+                    </div>
+                    <p class="mt-6 text-sm text-slate-400">Effective for similar user grouping but sensitive to data scale.</p>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-slate-950 p-6 rounded-xl border border-slate-800 text-center">
+                <p class="text-xs text-slate-500 uppercase tracking-widest mb-4">Python Matplotlib Output</p>
+                <img src="comparison_graph.png" alt="Python Graph Result" class="mx-auto rounded-lg max-w-full shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <section id="conclusion" class="py-20 max-w-4xl mx-auto px-6">
+        <div class="bg-teal-900/10 border border-teal-500/20 p-8 rounded-2xl relative overflow-hidden">
+            <h3 class="text-2xl font-bold text-white mb-4">Final Conclusion</h3>
+            <p class="text-slate-400 leading-relaxed">
+                The study concludes that ensemble learning (Random Forest) is significantly more accurate at identifying streaming churn. This allows the platform to automatically offer <span class="text-teal-400">targeted discounts</span> to the 89% of users identified as "at-risk," saving thousands in potential revenue loss.
+            </p>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-900 text-center">
+        <p class="text-slate-600 text-xs tracking-widest uppercase">
+            Designed & Developed by Niharika | KIIT University
+        </p>
+    </footer>
+
+</body>
+</html>
